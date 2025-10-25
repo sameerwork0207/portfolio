@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import { File, Github, Linkedin } from "lucide-react";
+import { File } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -13,6 +13,7 @@ import { BlurIn, BoxReveal } from "../reveal-animations";
 import ScrollDownIcon from "../scroll-down-icon";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { config } from "@/data/config";
+import Image from "next/image"; // Make sure this import is here!
 
 const HeroSection = () => {
   const { isLoading } = usePreloader();
@@ -31,6 +32,17 @@ const HeroSection = () => {
           {!isLoading && (
             <>
               <div className="">
+                
+                {/* --- 3. YOUR PHOTO --- */}
+                <Image
+                  src="/sameer.photo.jpg" // This matches your file in /public
+                  alt="Sameer Shaikh profile photo"
+                  width={150}
+                  height={150}
+                  className="rounded-full mb-4"
+                />
+
+                {/* --- "Hi, I am" text --- */}
                 <BlurIn delay={0.7}>
                   <p
                     className={cn(
@@ -42,6 +54,8 @@ const HeroSection = () => {
                     <br className="md:hidden" />
                   </p>
                 </BlurIn>
+
+                {/* --- Your name from config.ts --- */}
                 <BlurIn delay={1}>
                   <Tooltip delayDuration={300}>
                     <TooltipTrigger asChild>
@@ -54,10 +68,6 @@ const HeroSection = () => {
                         {config.author.split(" ")[0]}
                         <br className="md:block hiidden" />
                         {config.author.split(" ")[1]}
-                        {/* PLEASE hello??
-
-                        <br className="md:block hiidden" />
-                        UNMUTE ME 😢😢 */}
                       </h1>
                     </TooltipTrigger>
                     <TooltipContent
@@ -68,30 +78,34 @@ const HeroSection = () => {
                     </TooltipContent>
                   </Tooltip>
                 </BlurIn>
-                {/* <div className="md:block hidden bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 w-screen h-px animate-fade-right animate-glow" /> */}
+
+                {/* --- 1. YOUR NEW TEXT --- */}
                 <BlurIn delay={1.2}>
-                  <p
+                  <div
                     className={cn(
                       "md:self-start md:mt-4 font-thin text-md text-slate-500 dark:text-zinc-400 ml-3",
-                      "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
+                      "cursor-default font-display sm:text-xl md:text-xl bg-clip-text "
                     )}
                   >
-                    A Full Stack Web Developer
-                  </p>
+                    <p>Data Science | Web Dev | AI-ML</p>
+                    <p>Presentation | Communication | Public Speaking</p>
+                  </div>
                 </BlurIn>
+
               </div>
               <div className="mt-8 md:ml-2 flex flex-col gap-3">
                 <Link
                   href={
-                    "https://drive.google.com/file/d/1O97WCk2DrO9x6SHOqf7LvRbmHkMgGIb4/view?usp=sharing"
+                    "https://drive.google.com/file/d/1O97WCk2DrO9x6SHOqf7LvRbmHkMgGIb4/view?usp=sharing" // <-- PASTE YOUR OWN RESUME LINK HERE
                   }
                   target="_blank"
                   className="flex-1"
                 >
-                  <BoxReveal delay={2} width="100%" >
+                  <BoxReveal delay={2} width="100%">
                     <Button className="flex items-center gap-2 w-full">
                       <File size={24} />
-                      <p>Resume</p>
+                      {/* --- 2. YOUR "MY RESUME" TEXT --- */}
+                      <p>My Resume</p>
                     </Button>
                   </BoxReveal>
                 </Link>
@@ -134,7 +148,7 @@ const HeroSection = () => {
         </div>
         <div className="grid col-span-1"></div>
       </div>
-      <div className="absolute bottom-10 left-[50%] translate-x-[-50%]">
+      <div className="absolute bottom-10 left-[50%] translate-x[-50%]">
         <ScrollDownIcon />
       </div>
     </section>
