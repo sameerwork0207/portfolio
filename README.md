@@ -1,8 +1,11 @@
-# 🚀 My Portfolio Website
+<img width="1914" height="1045" alt="image" src="https://github.com/user-attachments/assets/fc181990-2fcc-41ff-b37f-830db28aefb2" /># Hiiiii!!!
+This is Sameer Shaikh's Portfolio website (Took me 3 days to develop and understand btw)
+This was inspired by the work of Naresh Kothari and Avinash Zende
+
 
 Welcome to the repository for my personal portfolio website! This is where I showcase my skills, projects, and a bit of my personality through jaw-dropping 3D animations, slick interactions, and fluid motion. If you're into creative web design, you're in the right place.
 
-![Portfolio Preview](https://github.com/Naresh-Khatri/Portfolio/blob/main/public/assets/projects-screenshots/portfolio/landing.png?raw=true)
+![Portfolio Preview](https://portfolio-one-lyart-66.vercel.app/)
 
 ## 🔥 Features
 
