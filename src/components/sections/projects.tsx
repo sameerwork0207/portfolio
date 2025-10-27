@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image from "next/image"; // Make sure this import exists
 import React from "react";
 import {
   Modal,
@@ -30,14 +30,17 @@ const ProjectsSection = () => {
         </h2>
       </Link>
       <div className="grid grid-cols-1 md:grid-cols-3">
+        {/* Pass the index to Modall */}
         {projects.map((project, index) => (
-          <Modall key={project.src} project={project} />
+          <Modall key={project.src} project={project} index={index} />
         ))}
       </div>
     </section>
   );
 };
-const Modall = ({ project }: { project: Project }) => {
+
+// Update Modall props to accept index
+const Modall = ({ project, index }: { project: Project; index: number }) => {
   return (
     <div className="flex items-center justify-center">
       <Modal>
@@ -46,13 +49,29 @@ const Modall = ({ project }: { project: Project }) => {
             className="relative w-[400px] h-auto rounded-lg overflow-hidden"
             style={{ aspectRatio: "3/2" }}
           >
-            <Image
-              className="absolute w-full h-full top-0 left-0 hover:scale-[1.05] transition-all"
-              src={project.src}
-              alt={project.title}
-              width={300}
-              height={300}
-            />
+            {/* --- START: Conditional Image Rendering --- */}
+            {index === 0 ? (
+              // --- TEMPORARY STANDARD IMG TAG for the first project ---
+              <img
+                className="absolute w-full h-full top-0 left-0 hover:scale-[1.05] transition-all"
+                src={project.src} // Use direct src
+                alt={project.title}
+                style={{ objectFit: 'cover' }} // Ensure image covers the area
+                loading="lazy"
+              />
+            ) : (
+              // --- ORIGINAL NEXT.JS IMAGE COMPONENT for other projects ---
+              <Image
+                className="absolute w-full h-full top-0 left-0 hover:scale-[1.05] transition-all"
+                src={project.src}
+                alt={project.title}
+                width={400} // Adjust width if needed
+                height={267} // Adjust height (maintaining 3/2 aspect ratio) if needed
+              />
+            )}
+            {/* --- END: Conditional Image Rendering --- */}
+
+            {/* --- Overlay Gradient and Text (Keep as is) --- */}
             <div className="absolute w-full h-1/2 bottom-0 left-0 bg-gradient-to-t from-black via-black/85 to-transparent pointer-events-none">
               <div className="flex flex-col h-full items-start justify-end p-6">
                 <div className="text-lg text-left">{project.title}</div>
@@ -101,6 +120,7 @@ const ProjectContents = ({ project }: { project: Project }) => {
             <FloatingDock items={project.skills.frontend} />
           )}
         </div>
+        {/* This is the check we fixed earlier */}
         {project.skills.backend && project.skills.backend.length > 0 && (
           <div className="flex flex-row md:flex-col-reverse justify-center items-center gap-2 text-3xl mb-8">
             <p className="text-sm mt-1 text-neutral-600 dark:text-neutral-500">
