@@ -30,17 +30,17 @@ const ProjectsSection = () => {
         </h2>
       </Link>
       <div className="grid grid-cols-1 md:grid-cols-3">
-        {/* Pass the index to Modall */}
-        {projects.map((project, index) => (
-          <Modall key={project.src} project={project} index={index} />
+        {/* Removed index from map */}
+        {projects.map((project) => (
+          <Modall key={project.src} project={project} />
         ))}
       </div>
     </section>
   );
 };
 
-// Update Modall props to accept index
-const Modall = ({ project, index }: { project: Project; index: number }) => {
+// Removed index from Modall props
+const Modall = ({ project }: { project: Project }) => {
   return (
     <div className="flex items-center justify-center">
       <Modal>
@@ -49,27 +49,15 @@ const Modall = ({ project, index }: { project: Project; index: number }) => {
             className="relative w-[400px] h-auto rounded-lg overflow-hidden"
             style={{ aspectRatio: "3/2" }}
           >
-            {/* --- START: Conditional Image Rendering --- */}
-            {index === 0 ? (
-              // --- TEMPORARY STANDARD IMG TAG for the first project ---
-              <img
-                className="absolute w-full h-full top-0 left-0 hover:scale-[1.05] transition-all"
-                src={project.src} // Use direct src
-                alt={project.title}
-                style={{ objectFit: 'cover' }} // Ensure image covers the area
-                loading="lazy"
-              />
-            ) : (
-              // --- ORIGINAL NEXT.JS IMAGE COMPONENT for other projects ---
-              <Image
-                className="absolute w-full h-full top-0 left-0 hover:scale-[1.05] transition-all"
-                src={project.src}
-                alt={project.title}
-                width={400} // Adjust width if needed
-                height={267} // Adjust height (maintaining 3/2 aspect ratio) if needed
-              />
-            )}
-            {/* --- END: Conditional Image Rendering --- */}
+            {/* --- Restored original Next.js Image component --- */}
+            <Image
+              className="absolute w-full h-full top-0 left-0 hover:scale-[1.05] transition-all"
+              src={project.src}
+              alt={project.title}
+              width={400} // Ensure width is appropriate
+              height={267} // Ensure height is appropriate (maintaining 3/2 aspect ratio)
+            />
+            {/* --- End of Image component --- */}
 
             {/* --- Overlay Gradient and Text (Keep as is) --- */}
             <div className="absolute w-full h-1/2 bottom-0 left-0 bg-gradient-to-t from-black via-black/85 to-transparent pointer-events-none">
@@ -130,35 +118,8 @@ const ProjectContents = ({ project }: { project: Project }) => {
           </div>
         )}
       </div>
-      {/* <div className="flex justify-center items-center">
-        {project.screenshots.map((image, idx) => (
-          <motion.div
-            key={"images" + idx}
-            style={{
-              rotate: Math.random() * 20 - 10,
-            }}
-            whileHover={{
-              scale: 1.1,
-              rotate: 0,
-              zIndex: 100,
-            }}
-            whileTap={{
-              scale: 1.1,
-              rotate: 0,
-              zIndex: 100,
-            }}
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
-          >
-            <Image
-              src={`${project.src.split("1.png")[0]}${image}`}
-              alt="screenshots"
-              width="500"
-              height="500"
-              className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
-            />
-          </motion.div>
-        ))}
-      </div> */}
+      {/* Commented out screenshot section remains unchanged */}
+      {/* <div className="flex justify-center items-center"> ... </div> */}
       {project.content}
     </>
   );

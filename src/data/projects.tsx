@@ -14,10 +14,18 @@ import {
   SiGithub,
 } from "react-icons/si";
 import { ReactNode } from "react";
+import type { StaticImageData } from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import SlideShow from "@/components/slide-show"; // <-- ADDED THIS
+
+// Import local images from `src/my-projects` so Next.js can resolve them
+import portfolioSameer from "@/my-projects/portfolio-sameer.png";
+import bionicArmImg from "@/my-projects/bionic-arm.png";
+import medpredImg from "@/my-projects/medpred.png";
+import visionPaddleImg from "@/my-projects/vision-paddle.png";
+import movieRecImg from "@/my-projects/movie-Recommendation.png";
 
 // --- TYPE DEFINITION (You can ignore this) ---
 export type Skill = {
@@ -28,7 +36,7 @@ export type Project = {
   id: string;
   category: string;
   title: string;
-  src: string;
+  src: string | StaticImageData;
   screenshots?: string[];
   skills: { frontend: Skill[]; backend?: Skill[] };
   content: React.ReactNode | any;
@@ -82,8 +90,10 @@ const PROJECT_SKILLS = {
 };
 
 // --- THE BASE PATH FOR YOUR PROJECT SCREENSHOTS ---
-// (Make sure to put your slideshow images in this folder)
-const BASE_PATH = "/my-projects"; 
+// Serve images from the `public/assets` folder so Next.js can find them.
+// Put your images in `public/assets/` (or a subfolder) and reference them
+// via `${BASE_PATH}/your-image.png`.
+const BASE_PATH = "/assets";
 
 // --- 2. YOUR LIST OF PROJECTS ---
 
@@ -93,7 +103,7 @@ const projects: Project[] = [
     id: "portfolio",
     category: "Web Development",
     title: "My 3D Portfolio",
-    src: "/my-projects/portfolio-sameer.png", 
+  src: portfolioSameer,
     live: "#", 
     github: "https://github.com/sameerwork0207/portfolio",
     skills: {
@@ -125,7 +135,7 @@ const projects: Project[] = [
     id: "bionic-arm",
     category: "Robotics & Hardware",
     title: "Bionic Arm",
-    src: "/my-projects/bionic-arm.png", 
+  src: bionicArmImg,
     live: "#", 
     github: "https://github.com/sameerwork0207/Bionic-Arm", // CHANGE THIS LINK
     skills: {
@@ -152,7 +162,7 @@ const projects: Project[] = [
     id: "medpred",
     category: "Machine Learning",
     title: "MedPred Disease Prediction",
-    src: "/my-projects/medpred.png", 
+  src: medpredImg,
     live: "#",
     github: "https://github.com/sameerwork0207/MedPred", // CHANGE THIS LINK
     skills: {
@@ -202,7 +212,7 @@ const projects: Project[] = [
     id: "vision-paddle",
     category: "Computer Vision",
     title: "Vision Paddle Game",
-    src: "/my-projects/vision-paddle.png", 
+  src: visionPaddleImg,
     live: "#",
     github: "https://github.com/sameerwork0207/VisionPaddle", // CHANGE THIS LINK
     skills: {
@@ -230,7 +240,7 @@ const projects: Project[] = [
     id: "movie-rec",
     category: "Machine Learning",
     title: "Movie Recommendation System",
-    src: "/my-projects/movie-Recommendation.png", 
+  src: movieRecImg,
     live: "#",
     github: "https://github.com/sameerwork0207/Movie-Rec-System", // CHANGE THIS LINK
     skills: {
