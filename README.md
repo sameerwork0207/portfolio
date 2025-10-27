@@ -5,7 +5,7 @@ This was inspired by the work of Naresh Kothari and Avinash Zende
 
 Welcome to the repository for my personal portfolio website! This is where I showcase my skills, projects, and a bit of my personality through jaw-dropping 3D animations, slick interactions, and fluid motion. If you're into creative web design, you're in the right place.
 
-![Portfolio Preview](https://portfolio-one-lyart-66.vercel.app/)
+![Portfolio Preview](https://portfolio-bczibb9rm-sameers-projects-b9e6e719.vercel.app/)
 
 ## 🔥 Features
 
