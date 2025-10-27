@@ -1,4 +1,4 @@
-<img width="1914" height="1045" alt="image" src="public/assets/my-projects/portfolio-sameer.png" /># Hiiiii!!!
+<img width="1914" height="1045" alt="image" src="/my-projects/medpred.png" /># Hiiiii!!!
 This is Sameer Shaikh's Portfolio website (Took me 3 days to develop and understand btw)
 This was inspired by the work of Naresh Kothari and Avinash Zende
 
