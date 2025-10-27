@@ -101,7 +101,7 @@ const ProjectContents = ({ project }: { project: Project }) => {
             <FloatingDock items={project.skills.frontend} />
           )}
         </div>
-        {project.skills.backend?.length > 0 && (
+        {project.skills.backend && project.skills.backend.length > 0 && (
           <div className="flex flex-row md:flex-col-reverse justify-center items-center gap-2 text-3xl mb-8">
             <p className="text-sm mt-1 text-neutral-600 dark:text-neutral-500">
               Backend
