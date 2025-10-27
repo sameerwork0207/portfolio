@@ -230,7 +230,7 @@ const projects: Project[] = [
     id: "movie-rec",
     category: "Machine Learning",
     title: "Movie Recommendation System",
-    src: "/my-projects/movie-rec.png", 
+    src: "/my-projects/movie-Recommendation.png", 
     live: "#",
     github: "https://github.com/sameerwork0207/Movie-Rec-System", // CHANGE THIS LINK
     skills: {
