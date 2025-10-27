@@ -152,7 +152,7 @@ const projects: Project[] = [
     id: "medpred",
     category: "Machine Learning",
     title: "MedPred Disease Prediction",
-    src: "/my-projects/medpred.png", 
+    src: "public/assets/my-projects/medpred.png", 
     live: "#",
     github: "https://github.com/sameerwork0207/MedPred", // CHANGE THIS LINK
     skills: {
