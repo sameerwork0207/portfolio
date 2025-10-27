@@ -83,7 +83,7 @@ const PROJECT_SKILLS = {
 
 // --- THE BASE PATH FOR YOUR PROJECT SCREENSHOTS ---
 // (Make sure to put your slideshow images in this folder)
-const BASE_PATH = "/assets/my-projects"; 
+const BASE_PATH = "/my-projects"; 
 
 // --- 2. YOUR LIST OF PROJECTS ---
 
@@ -93,7 +93,7 @@ const projects: Project[] = [
     id: "portfolio",
     category: "Web Development",
     title: "My 3D Portfolio",
-    src: "/assets/my-projects/portfolio-sameer.png", 
+    src: "/my-projects/portfolio-sameer.png", 
     live: "#", 
     github: "https://github.com/sameerwork0207/portfolio",
     skills: {
@@ -125,7 +125,7 @@ const projects: Project[] = [
     id: "bionic-arm",
     category: "Robotics & Hardware",
     title: "Bionic Arm",
-    src: "/assets/my-projects/bionic-arm.png", 
+    src: "/my-projects/bionic-arm.png", 
     live: "#", 
     github: "https://github.com/sameerwork0207/Bionic-Arm", // CHANGE THIS LINK
     skills: {
@@ -152,7 +152,7 @@ const projects: Project[] = [
     id: "medpred",
     category: "Machine Learning",
     title: "MedPred Disease Prediction",
-    src: "/assets/my-projects/medpred.png", 
+    src: "/my-projects/medpred.png", 
     live: "#",
     github: "https://github.com/sameerwork0207/MedPred", // CHANGE THIS LINK
     skills: {
@@ -181,7 +181,7 @@ const projects: Project[] = [
           </p>
           
           {/* --- SLIDESHOW EXAMPLE --- */}
-          {/* 1. Put 'medpred-1.png' and 'medpred-2.png' in '//assets/my-projects/'
+          {/* 1. Put 'medpred-1.png' and 'medpred-2.png' in '/my-projects/'
             2. Uncomment the <SlideShow> block below
           */}
           {/*
@@ -202,7 +202,7 @@ const projects: Project[] = [
     id: "vision-paddle",
     category: "Computer Vision",
     title: "Vision Paddle Game",
-    src: "/assets/my-projects/vision-paddle.png", 
+    src: "/my-projects/vision-paddle.png", 
     live: "#",
     github: "https://github.com/sameerwork0207/VisionPaddle", // CHANGE THIS LINK
     skills: {
@@ -230,7 +230,7 @@ const projects: Project[] = [
     id: "movie-rec",
     category: "Machine Learning",
     title: "Movie Recommendation System",
-    src: "/assets/my-projects/movie-rec.png", 
+    src: "/my-projects/movie-rec.png", 
     live: "#",
     github: "https://github.com/sameerwork0207/Movie-Rec-System", // CHANGE THIS LINK
     skills: {
@@ -261,7 +261,7 @@ const projects: Project[] = [
     id: "more-projects",
     category: "My GitHub",
     title: "More Projects",
-    src: "/assets/logo-dark.svg", 
+    src: "/logo-dark.svg", 
     live: "https://github.com/sameerwork0207?tab=repositories", // Direct link to your GitHub repos
     github: "https://github.com/sameerwork0207",
     skills: {
