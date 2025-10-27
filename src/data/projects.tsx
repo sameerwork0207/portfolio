@@ -135,7 +135,7 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            A Voice-Controlled Bionic Arm
+            A Muscle/Iot controlled Bionic Arm
           </TypographyP>
           <TypographyP className="font-mono mt-4">
             A description of your bionic arm project. What sensors did it
@@ -218,7 +218,7 @@ const projects: Project[] = [
             A classic paddle ball game controlled entirely by your hand
             movements, using computer vision (OpenCV) to track your hand on
             camera.
-          </PrimaryP>
+          </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
       );
