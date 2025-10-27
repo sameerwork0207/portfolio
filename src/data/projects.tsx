@@ -274,7 +274,7 @@ const projects: Project[] = [
             See All My Work
           </TypographyP>
           <TypographyP className="font-mono mt-4">
-            My work is always ongoing. Click the "Visit Website" button to
+            My work is always ongoing. Click the &quot;Visit Website&quot; button to
             see all my  repositories.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
@@ -284,4 +284,4 @@ const projects: Project[] = [
   },
 ];
 
-export default projects;
+export default projects; 
