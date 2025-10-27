@@ -93,7 +93,7 @@ const projects: Project[] = [
     id: "portfolio",
     category: "Web Development",
     title: "My 3D Portfolio",
-    src: "/assets/logo-dark.svg", 
+    src: "/assets/my-projects/portfolio-sameer.png", 
     live: "#", 
     github: "https://github.com/sameerwork0207/portfolio",
     skills: {
@@ -127,7 +127,7 @@ const projects: Project[] = [
     title: "Bionic Arm",
     src: "/assets/my-projects/bionic-arm.png", 
     live: "#", 
-    github: "https://github.com/sameerwork0207/your-bionic-arm-repo", // CHANGE THIS LINK
+    github: "https://github.com/sameerwork0207/Bionic-Arm", // CHANGE THIS LINK
     skills: {
       frontend: [PROJECT_SKILLS.python], 
     },
@@ -138,8 +138,8 @@ const projects: Project[] = [
             A Muscle/Iot controlled Bionic Arm
           </TypographyP>
           <TypographyP className="font-mono mt-4">
-            A description of your bionic arm project. What sensors did it
-            use? What was its purpose? Explain it here.
+            A bionic arm ehich could be attcahed to people who have lost their arm, 
+            very cost effective than the options available in market currently
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -181,7 +181,7 @@ const projects: Project[] = [
           </p>
           
           {/* --- SLIDESHOW EXAMPLE --- */}
-          {/* 1. Put 'medpred-1.png' and 'medpred-2.png' in '/public/assets/my-projects/'
+          {/* 1. Put 'medpred-1.png' and 'medpred-2.png' in '//assets/my-projects/'
             2. Uncomment the <SlideShow> block below
           */}
           {/*
@@ -275,7 +275,7 @@ const projects: Project[] = [
           </TypographyP>
           <TypographyP className="font-mono mt-4">
             My work is always ongoing. Click the "Visit Website" button to
-            see all my public repositories.
+            see all my  repositories.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
