@@ -8,6 +8,10 @@ body {
 
 @layer base {
   :root {
+    /* Reduce base font-size to mimic a 75% zoomed-out appearance.
+       This decreases overall typographic scale and spacing.
+       To revert, remove or change this value back to 100% (default). */
+    font-size: 75%;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;

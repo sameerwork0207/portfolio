@@ -29,9 +29,10 @@ export function TypographyH2({
   return (
     <h2
       className={cn(
-        "scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0",
+        "scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 text-white",
         className
       )}
+      style={{ WebkitTextStroke: "0.4px rgba(0,0,0,0.6)" }}
     >
       {children}
     </h2>
@@ -47,9 +48,10 @@ export function TypographyH3({
   return (
     <h3
       className={cn(
-        "scroll-m-20 text-2xl font-semibold tracking-tight",
+        "scroll-m-20 text-2xl font-semibold tracking-tight text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.85)]",
         className
       )}
+      style={{ WebkitTextStroke: "0.35px rgba(0,0,0,0.6)" }}
     >
       {children}
     </h3>

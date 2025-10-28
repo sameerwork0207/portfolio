@@ -20,27 +20,26 @@ const HeroSection = () => {
 
   return (
     <section id="hero" className={cn("relative w-full h-screen")}>
-      <div className="grid md:grid-cols-2">
+  <div className="grid md:grid-cols-[60%_40%]">
         <div
           className={cn(
             "h-[calc(100dvh-3rem)] md:h-[calc(100dvh-4rem)] z-[2]",
             "col-span-1",
             "flex flex-col justify-start md:justify-center items-center md:items-start",
-            "pt-28 sm:pt-0 sm:pb-32 md:p-24 lg:p-40 xl:p-48"
+            "pt-28 sm:pt-0 sm:pb-32 md:p-24 md:pl-72 lg:p-40 xl:p-48"
           )}
         >
           {!isLoading && (
             <>
-              <div className="">
-                
-                {/* --- 3. YOUR PHOTO --- */}
-                <Image
-                  src="/assets/sameer_photo.jpg" // This matches your file in /public
-                  alt="Sameer Shaikh profile photo"
-                  width={150}
-                  height={150}
-                  className="rounded-full mb-4"
-                />
+              <div className="w-full max-w-[640px] ml-auto">
+                    {/* --- 3. YOUR PHOTO --- */}
+                    <Image
+                      src="/assets/sameer_photo.jpg" // This matches your file in /public
+                      alt="Sameer Shaikh profile photo"
+                      width={150}
+                      height={150}
+                      className="rounded-full mb-4"
+                    />
 
                 {/* --- "Hi, I am" text --- */}
                 <BlurIn delay={0.7}>
@@ -93,7 +92,7 @@ const HeroSection = () => {
                 </BlurIn>
 
               </div>
-              <div className="mt-8 md:ml-2 flex flex-col gap-3">
+              <div className="mt-8 flex flex-col gap-3">
                 <Link
                   href={
                     "https://drive.google.com/file/d/1ePM-xSheekbFJVJxrbhaN2b0iA7ha8WV/view?usp=sharing" // <-- PASTE YOUR OWN RESUME LINK HERE
@@ -109,7 +108,7 @@ const HeroSection = () => {
                     </Button>
                   </BoxReveal>
                 </Link>
-                <div className="md:self-start flex gap-3">
+                <div className="flex gap-3">
                   <Tooltip delayDuration={300}>
                     <TooltipTrigger asChild>
                       <Link href={"#contact"}>

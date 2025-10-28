@@ -16,19 +16,20 @@ gsap.registerPlugin(ScrollTrigger);
 const STATES = {
   hero: {
     desktop: {
-      scale: { x: 0.25, y: 0.25, z: 0.25 },
+      // reduced overall keyboard scale to make it slightly smaller
+      scale: { x: 0.1875, y: 0.1875, z: 0.1875 },
       position: { x: 400, y: -200, z: 0 },
       rotation: { x: 0, y: 0, z: 0 },
     },
     mobile: {
-      scale: { x: 0.15, y: 0.15, z: 0.15 },
+      scale: { x: 0.1125, y: 0.1125, z: 0.1125 },
       position: { x: 0, y: -200, z: 0 },
       rotation: { x: 0, y: 0, z: 0 },
     },
   },
   about: {
     desktop: {
-      scale: { x: 0.4, y: 0.4, z: 0.4 },
+      scale: { x: 0.3, y: 0.3, z: 0.3 },
       position: { x: 0, y: -40, z: 0 },
       rotation: {
         x: 0,
@@ -37,7 +38,7 @@ const STATES = {
       },
     },
     mobile: {
-      scale: { x: 0.2, y: 0.2, z: 0.2 },
+      scale: { x: 0.15, y: 0.15, z: 0.15 },
       position: { x: 0, y: -40, z: 0 },
       rotation: {
         x: 0,
@@ -48,7 +49,7 @@ const STATES = {
   },
   skills: {
     desktop: {
-      scale: { x: 0.4, y: 0.4, z: 0.4 },
+      scale: { x: 0.3, y: 0.3, z: 0.3 },
       position: { x: 0, y: -40, z: 0 },
       rotation: {
         x: 0,
@@ -57,7 +58,7 @@ const STATES = {
       },
     },
     mobile: {
-      scale: { x: 0.2, y: 0.2, z: 0.2 },
+      scale: { x: 0.15, y: 0.15, z: 0.15 },
       position: { x: 0, y: -40, z: 0 },
       rotation: {
         x: 0,
@@ -68,7 +69,7 @@ const STATES = {
   },
   projects: {
     desktop: {
-      scale: { x: 0.3, y: 0.3, z: 0.3 },
+      scale: { x: 0.225, y: 0.225, z: 0.225 },
       position: { x: 0, y: -40, z: 0 },
       rotation: {
         x: Math.PI,
@@ -77,7 +78,7 @@ const STATES = {
       },
     },
     mobile: {
-      scale: { x: 0.18, y: 0.18, z: 0.18 },
+      scale: { x: 0.135, y: 0.135, z: 0.135 },
       position: { x: 0, y: 150, z: 0 },
       rotation: {
         x: Math.PI,
@@ -88,7 +89,7 @@ const STATES = {
   },
   contact: {
     desktop: {
-      scale: { x: 0.3, y: 0.3, z: 0.3 },
+      scale: { x: 0.225, y: 0.225, z: 0.225 },
       position: { x: 500, y: -250, z: 0 },
       rotation: {
         x: 0,
@@ -97,7 +98,7 @@ const STATES = {
       },
     },
     mobile: {
-      scale: { x: 0.18, y: 0.18, z: 0.18 },
+      scale: { x: 0.135, y: 0.135, z: 0.135 },
       position: { x: 0, y: 150, z: 0 },
       rotation: {
         x: Math.PI,
