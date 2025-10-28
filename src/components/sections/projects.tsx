@@ -32,7 +32,7 @@ const ProjectsSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-3">
         {/* Removed index from map */}
         {projects.map((project) => (
-          <Modall key={project.src} project={project} />
+          <Modall key={project.id} project={project} />
         ))}
       </div>
     </section>
