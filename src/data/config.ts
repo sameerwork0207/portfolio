@@ -40,3 +40,4 @@ const config = {
   },
 };
 export { config };
+export const social = config.social;

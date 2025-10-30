@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { footer } from "./config";
 import { Button } from "../ui/button";
-import SocialMediaButtons from "../social/social-media-icons";
 import { config } from "@/data/config";
 
 function Footer() {
@@ -12,9 +11,7 @@ function Footer() {
       <p className="text-xs text-gray-500 dark:text-gray-400">
         © {year} {config.author}. All rights reserved.
       </p>
-      <div className="mx-auto">
-        <SocialMediaButtons />
-      </div>
+      {/* Social icons removed per user request */}
       <nav className="flex gap-4 sm:gap-6 z-10">
         {footer.map((link, index) => {
           const { title, href } = link;

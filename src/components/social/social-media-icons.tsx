@@ -7,6 +7,7 @@ import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
 import { Linkedin } from "lucide-react";
 import { config } from "@/data/config";
 import Link from "next/link";
+import {social} from "@/data/config";
 
 const BUTTONS = [
   {
