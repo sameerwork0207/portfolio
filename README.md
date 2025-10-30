@@ -5,7 +5,7 @@ This was inspired by the work of Naresh Kothari and Avinash Zende
 
 Welcome to the repository for my personal portfolio website! This is where I showcase my skills, projects, and a bit of my personality through jaw-dropping 3D animations, slick interactions, and fluid motion. If you're into creative web design, you're in the right place.
 
-![Portfolio Preview]([https://www.sameershaikh.space/)
+![Portfolio Preview](https://www.sameershaikh.space/)
 
 ## 🔥 Features
 
@@ -33,7 +33,7 @@ Welcome to the repository for my personal portfolio website! This is where I sho
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/Naresh-Khatri/Portfolio.git
+    git clone https://github.com/sameerwork0207/portfolio.git
     ```
 
 2. Navigate to the project directory:
