@@ -8,8 +8,10 @@ const links: Link[] = [
   },
   {
     title: 'About',
-    href: '/#about',
-    thumbnail: '/assets/nav-link-previews/about.png'
+  href: 'https://drive.google.com/file/d/1ePM-xSheekbFJVJxrbhaN2b0iA7ha8WV/view',
+    thumbnail: '/assets/nav-link-previews/about.png',
+    // open resume in new tab
+    target: '_blank'
   },
   {
     title: 'Skills',
@@ -31,11 +33,7 @@ const links: Link[] = [
   //   href: '/testimonials',
   //   thumbnail: '/assets/nav-link-previews/testimonials.png'
   // },
-  {
-    title: 'Blogs',
-    href: '/blogs',
-    thumbnail: '/assets/nav-link-previews/blog.png',
-  },
+  // Blog removed from header navigation
   {
     title: 'Contact',
     href: '/#contact',

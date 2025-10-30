@@ -58,11 +58,15 @@ export default function Body({
       {links.map((link, index) => {
         const { title, href, target } = link;
 
+        // set rel for external targets
+        const rel = target === "_blank" ? "noopener noreferrer" : undefined;
+
         return (
           <Link
             key={`l_${index}`}
             href={href}
             target={target}
+            rel={rel}
             className="cursor-can-hover rounded-lg"
           >
             <motion.p
