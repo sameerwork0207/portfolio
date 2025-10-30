@@ -39,7 +39,7 @@ Welcome to the repository for my personal portfolio website! This is where I sho
 2. Navigate to the project directory:
 
     ```bash
-    cd Portfolio
+    cd portfolio
     ```
 
 3. Install dependencies:
