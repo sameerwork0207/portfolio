@@ -1,3 +1,4 @@
+Live Portfolio https://www.sameershaikh.space/
 <img width="1914" height="1045" alt="image" src="public/assets/seo/og-image.png" /># Hiiiii!!!
 This is Sameer Shaikh's Portfolio website (Took me 3 days to develop and understand btw)
 This was inspired by the work of Naresh Kothari and Avinash Zende
