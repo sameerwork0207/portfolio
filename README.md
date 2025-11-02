@@ -34,13 +34,13 @@ Live Portfolio	https://www.sameershaikh.space/
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/Naresh-Khatri/Portfolio.git
+    git clone https://github.com/sameerwork0207/portfolio.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd Portfolio
+    cd portfolio
     ```
 
 3. Install dependencies:
