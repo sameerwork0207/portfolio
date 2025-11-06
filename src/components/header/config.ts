@@ -8,7 +8,7 @@ const links: Link[] = [
   },
   {
     title: 'About',
-  href: 'https://drive.google.com/file/d/1ePM-xSheekbFJVJxrbhaN2b0iA7ha8WV/view',
+  href: 'https://drive.google.com/file/d/1lxs_ayS8CUjhjxvo2jFDFsqjeZanbTiA/view?usp=sharing',
     thumbnail: '/assets/nav-link-previews/about.png',
     // open resume in new tab
     target: '_blank'

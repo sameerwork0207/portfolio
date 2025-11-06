@@ -8,7 +8,7 @@ const LINKS = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
   // open About as external resume link in new tab
-  { name: "About", href: "https://drive.google.com/file/d/1ePM-xSheekbFJVJxrbhaN2b0iA7ha8WV/view", target: "_blank" },
+  { name: "About", href: "https://drive.google.com/file/d/1lxs_ayS8CUjhjxvo2jFDFsqjeZanbTiA/view?usp=sharing", target: "_blank" },
   // Blog removed from header
 ];
 
