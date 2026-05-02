@@ -28,7 +28,7 @@ const config = {
   // --- 4. Your Social Links (Very Important!) ---
   social: {
     twitter: "https://x.com/your-twitter-username", // Your Twitter
-    linkedin: "https://www.linkedin.com/in/sameer-ctrl/", // Your LinkedIn
+    linkedin: "https://www.linkedin.com/in/sameerwork0207/", // Your LinkedIn
     instagram: "https://www.instagram.com/meeracle.music/", // Your Instagram
     facebook: "https://www.facebook.com/your-facebook-username/", // Your Facebook
     github: "https://github.com/sameerwork0207", // Your GitHub

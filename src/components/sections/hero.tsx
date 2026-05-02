@@ -87,7 +87,7 @@ const HeroSection = () => {
                     )}
                   >
                     <p>Data Science | Web Dev | AI-ML</p>
-                    <p>Presentation | Communication | Public Speaking</p>
+                    <p>Presentation | Communication | Public Speaking | Music</p>
                   </div>
                 </BlurIn>
 
@@ -95,7 +95,7 @@ const HeroSection = () => {
               <div className="mt-8 flex flex-col gap-3">
                 <Link
                   href={
-                    "https://drive.google.com/file/d/1lxs_ayS8CUjhjxvo2jFDFsqjeZanbTiA/view?usp=sharing" // <-- PASTE YOUR OWN RESUME LINK HERE
+                    "https://drive.google.com/file/d/1JZXpq2IpvWpYdnxdLDhou355EOmpwnYY/view?usp=sharing" // <-- PASTE YOUR OWN RESUME LINK HERE
                   }
                   target="_blank"
                   className="flex-1"
